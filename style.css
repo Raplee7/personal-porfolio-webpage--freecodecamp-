@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+}
+
+nav .logo {
+    font-size: 1.7rem;
+    padding-left: 50px;
+    color: #3a5c65;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #3a5c65;
+}
+
+nav ul li a:hover {
+    color: #fe725c;
+}
+#welcome-section {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    height: 100vh;
+}
+#welcome-section .desc {
+    margin: 0 70px;
+}
+#welcome-section .desc h1 {
+    font-size: 4rem;
+    line-height: 1;
+}
+#welcome-section .desc p {
+    font-size: 0.8rem;
+    margin: 10px 0;
+    text-align: justify;
+}
+#welcome-section .desc button {
+    padding: 12px 34px;
+    margin-top: 20px;
+    background-color: #3a5c65;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#welcome-section img {
+    width: 140%;
+}
+
+#projects {
+    background-color: #ececec;
+    padding: 60px 0;
+}
+#projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 60px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    margin: 0 50px;
+}
+.projects-grid a {
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: white;
+}
+.project-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 180px;
+    background-color: #3a5c65;
+}
+.project-icon i {
+    font-size: 150px;
+    color: #ececec;
+}
+.projects-grid h3 {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fe725c;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background-color: #3a5c65;
+    color: #ececec;
+}
+
+.offer-text h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.offer-text p {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.contact-links {
+    font-size: 30px;
+}
+
+.contact-links a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #ececec;
+    transition: 0.2s;
+}
+.contact-links a:hover {
+    color: #fe725c;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3a5c65;
+    border-top: 4px solid #fe725c;
+    color: #ececec;
+    padding: 20px 0;
+    line-height: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.disclamer p:nth-child(2) {
+    font-size: 0.6rem;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 680px) {
+    #welcome-section img {
+        display: none;
+    }
+    #welcome-section .desc {
+        margin: 20px;
+    }
+    #welcome-section .desc h1 {
+        font-size: 3rem;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav .logo {
+        padding: 0;
+    }
+    nav ul {
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+    nav ul li a {
+        margin: 0 10px;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        justify-content: center;
+    }
+    .project-icon {
+        width: 310px;
+    }
+    .offer-text h2 {
+        font-size: 8vw;
+    }
+    .offer-text p {
+        font-size: 5vw;
+    }
+    .contact-links a {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
